@@ -1,0 +1,2629 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ADECAP ENTERTAINMENT — Portfolio Institutionnel 2022–2026</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow+Condensed:wght@300;400;600;700;800;900&family=Barlow:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --black: #0B0B0B;
+    --white: #FFFFFF;
+    --cyan: #11D7E6;
+    --cyan-glow: rgba(17, 215, 230, 0.15);
+    --cyan-dark: #0da8b5;
+    --gray: #F3F3F3;
+    --gray-mid: #CCCCCC;
+    --gray-dark: #888888;
+    --page-w: 794px;
+    --page-h: 1123px;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: #1a1a1a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    padding: 40px 20px;
+    font-family: 'Barlow', sans-serif;
+  }
+
+  /* ─── PAGE SHELL ─── */
+  .page {
+    width: var(--page-w);
+    height: var(--page-h);
+    background: var(--white);
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+    box-shadow: 0 24px 80px rgba(0,0,0,0.6);
+    page-break-after: always;
+  }
+
+  .page-label {
+    color: #555;
+    font-size: 11px;
+    font-family: 'DM Mono', monospace;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+    text-align: center;
+  }
+
+  /* ══════════════════════════════════════════════
+     PAGE 1 — COVER
+  ══════════════════════════════════════════════ */
+  #p1 {
+    background: var(--black);
+  }
+
+  .p1-bg-grid {
+    position: absolute;
+    inset: 0;
+    background-image:
+      linear-gradient(rgba(17,215,230,0.04) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(17,215,230,0.04) 1px, transparent 1px);
+    background-size: 40px 40px;
+  }
+
+  .p1-diag1 {
+    position: absolute;
+    top: -80px; right: -80px;
+    width: 420px; height: 420px;
+    background: linear-gradient(135deg, var(--cyan) 0%, transparent 60%);
+    opacity: 0.12;
+    transform: rotate(15deg);
+  }
+
+  .p1-diag2 {
+    position: absolute;
+    bottom: 0; left: -60px;
+    width: 500px; height: 300px;
+    background: linear-gradient(45deg, var(--cyan) 0%, transparent 55%);
+    opacity: 0.08;
+    transform: rotate(-8deg);
+  }
+
+  .p1-cyan-line {
+    position: absolute;
+    top: 0; left: 80px;
+    width: 3px; height: 260px;
+    background: linear-gradient(to bottom, transparent, var(--cyan), transparent);
+  }
+
+  .p1-cyan-line2 {
+    position: absolute;
+    bottom: 140px; right: 0;
+    width: 240px; height: 2px;
+    background: linear-gradient(to left, transparent, var(--cyan));
+  }
+
+  .p1-top-bar {
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, transparent, var(--cyan), var(--cyan-dark), transparent);
+  }
+
+  .p1-inner {
+    position: relative;
+    z-index: 10;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 52px 60px 44px;
+  }
+
+  .p1-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 48px;
+  }
+
+  .p1-logo-wordmark {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .p1-logo-main {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 38px;
+    color: var(--white);
+    letter-spacing: 6px;
+    line-height: 1;
+  }
+
+  .p1-logo-sub {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 11px;
+    color: var(--cyan);
+    letter-spacing: 5px;
+    font-weight: 600;
+    margin-top: 3px;
+  }
+
+  .p1-social {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .p1-social-icon {
+    width: 30px; height: 30px;
+    border: 1px solid rgba(17,215,230,0.35);
+    border-radius: 6px;
+    display: flex; align-items: center; justify-content: center;
+    cursor: pointer;
+  }
+
+  .p1-social-icon svg { width: 14px; height: 14px; fill: var(--cyan); }
+
+  /* Hero image area */
+  .p1-hero {
+    flex: 1;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+  }
+
+  .p1-hero-img {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(160deg, rgba(17,215,230,0.08) 0%, rgba(0,0,0,0.4) 100%),
+                linear-gradient(to bottom, transparent 30%, rgba(11,11,11,0.75) 100%);
+    overflow: hidden;
+    border-radius: 4px;
+  }
+
+  .p1-hero-img::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(ellipse 60% 60% at 70% 40%, rgba(17,215,230,0.1) 0%, transparent 70%),
+      linear-gradient(160deg, #1a2f2f 0%, #0B0B0B 100%);
+  }
+
+  /* Athlete silhouette SVG */
+  .p1-athlete {
+    position: absolute;
+    bottom: 0;
+    right: 60px;
+    width: 340px;
+    height: 380px;
+    opacity: 0.85;
+  }
+
+  .p1-hero-text {
+    position: relative;
+    z-index: 10;
+    padding: 32px;
+  }
+
+  .p1-tagline {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 82px;
+    color: var(--white);
+    line-height: 0.9;
+    letter-spacing: 2px;
+    margin-bottom: 16px;
+  }
+
+  .p1-tagline span {
+    color: var(--cyan);
+    display: block;
+  }
+
+  .p1-portfolio-label {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-top: 8px;
+  }
+
+  .p1-portfolio-line {
+    width: 40px; height: 1px;
+    background: var(--cyan);
+  }
+
+  .p1-portfolio-text {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 13px;
+    color: var(--gray-mid);
+    letter-spacing: 3px;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+
+  .p1-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 18px;
+    border-top: 1px solid rgba(255,255,255,0.08);
+    margin-top: 8px;
+  }
+
+  .p1-footer-left {
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    color: rgba(255,255,255,0.3);
+    letter-spacing: 2px;
+  }
+
+  .p1-badge {
+    background: var(--cyan);
+    color: var(--black);
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    padding: 5px 12px;
+    border-radius: 2px;
+    text-transform: uppercase;
+  }
+
+  .p1-page-num {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 40px;
+    color: rgba(255,255,255,0.06);
+    position: absolute;
+    bottom: 20px;
+    right: 32px;
+  }
+
+  /* ══════════════════════════════════════════════
+     PAGE 2 — ABOUT US
+  ══════════════════════════════════════════════ */
+  #p2 { background: var(--white); }
+
+  .p2-accent-bar {
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 5px;
+    background: linear-gradient(90deg, var(--black), var(--cyan), var(--black));
+  }
+
+  .p2-left-stripe {
+    position: absolute;
+    top: 0; bottom: 0; left: 0;
+    width: 5px;
+    background: var(--black);
+  }
+
+  .p2-inner {
+    height: 100%;
+    padding: 52px 52px 44px 68px;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    gap: 28px;
+  }
+
+  .section-header {
+    display: flex;
+    align-items: flex-end;
+    gap: 16px;
+    margin-bottom: 4px;
+  }
+
+  .section-num {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 72px;
+    color: var(--gray);
+    line-height: 1;
+    letter-spacing: -2px;
+  }
+
+  .section-title-block {}
+
+  .section-overline {
+    font-family: 'DM Mono', monospace;
+    font-size: 9px;
+    color: var(--cyan);
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 2px;
+  }
+
+  .section-title {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 34px;
+    color: var(--black);
+    letter-spacing: 2px;
+    line-height: 1;
+  }
+
+  .cyan-rule {
+    width: 48px; height: 3px;
+    background: var(--cyan);
+    margin: 10px 0 16px;
+  }
+
+  .p2-body-text {
+    font-family: 'Barlow', sans-serif;
+    font-size: 13px;
+    color: #444;
+    line-height: 1.7;
+    max-width: 360px;
+  }
+
+  .p2-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 24px;
+    flex: 1;
+  }
+
+  .p2-left {}
+
+  .p2-img-block {
+    position: relative;
+    height: 200px;
+    background: var(--black);
+    overflow: hidden;
+    margin-bottom: 16px;
+    border-radius: 3px;
+  }
+
+  .p2-img-block::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, #1a3535 0%, #0B0B0B 100%);
+  }
+
+  .p2-img-label {
+    position: absolute;
+    bottom: 12px; left: 12px;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 10px;
+    color: var(--cyan);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+
+  .img-placeholder-icon {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.15;
+  }
+
+  .img-fill {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .p2-stats-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 12px;
+  }
+
+  .p2-stat {
+    padding: 14px;
+    background: var(--gray);
+    border-left: 3px solid var(--cyan);
+  }
+
+  .p2-stat-num {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 28px;
+    color: var(--black);
+    letter-spacing: 1px;
+  }
+
+  .p2-stat-label {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 10px;
+    color: var(--gray-dark);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-top: 2px;
+  }
+
+  .p2-right {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .p2-img-sm {
+    position: relative;
+    flex: 1;
+    background: #1a1a1a;
+    overflow: hidden;
+    border-radius: 3px;
+    min-height: 100px;
+  }
+
+  .p2-img-sm::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, #112222 0%, #0B0B0B 100%);
+  }
+
+  .p2-img-sm-label {
+    position: absolute;
+    bottom: 10px; left: 10px;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 9px;
+    color: var(--cyan);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+
+  .p2-quote-box {
+    background: var(--black);
+    padding: 18px;
+    border-radius: 3px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .p2-quote-box::before {
+    content: '"';
+    position: absolute;
+    top: -10px; right: 10px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 80px;
+    color: var(--cyan);
+    opacity: 0.15;
+  }
+
+  .p2-quote-text {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 15px;
+    color: var(--white);
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    line-height: 1.5;
+  }
+
+  .p2-quote-author {
+    font-family: 'DM Mono', monospace;
+    font-size: 9px;
+    color: var(--cyan);
+    letter-spacing: 2px;
+    margin-top: 8px;
+  }
+
+  .page-footer-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid var(--gray);
+    padding-top: 12px;
+  }
+
+  .pf-brand {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 10px;
+    color: var(--gray-dark);
+    letter-spacing: 3px;
+    text-transform: uppercase;
+  }
+
+  .pf-num {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 22px;
+    color: var(--gray);
+  }
+
+  /* ══════════════════════════════════════════════
+     PAGE 3 — VISION & MISSION
+  ══════════════════════════════════════════════ */
+  #p3 { background: var(--black); }
+
+  .p3-inner {
+    height: 100%;
+    padding: 52px 56px 44px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 5;
+  }
+
+  .p3-bg {
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(ellipse 70% 50% at 80% 20%, rgba(17,215,230,0.07) 0%, transparent 60%),
+      radial-gradient(ellipse 50% 40% at 10% 80%, rgba(17,215,230,0.05) 0%, transparent 60%);
+  }
+
+  .p3-diag {
+    position: absolute;
+    top: 0; right: -100px;
+    width: 350px; height: 350px;
+    border: 1px solid rgba(17,215,230,0.08);
+    transform: rotate(45deg);
+    top: -80px; right: -80px;
+  }
+
+  .p3-header {
+    margin-bottom: 36px;
+  }
+
+  .section-num-light {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 72px;
+    color: rgba(255,255,255,0.06);
+    line-height: 1;
+    letter-spacing: -2px;
+  }
+
+  .section-overline-light {
+    font-family: 'DM Mono', monospace;
+    font-size: 9px;
+    color: var(--cyan);
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+  }
+
+  .section-title-light {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 36px;
+    color: var(--white);
+    letter-spacing: 3px;
+    line-height: 1;
+  }
+
+  .p3-vm-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    margin-bottom: 32px;
+  }
+
+  .p3-vm-card {
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.07);
+    padding: 28px 24px;
+    border-top: 2px solid var(--cyan);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .p3-vm-card::after {
+    content: '';
+    position: absolute;
+    bottom: -30px; right: -30px;
+    width: 80px; height: 80px;
+    border: 1px solid rgba(17,215,230,0.1);
+    border-radius: 50%;
+  }
+
+  .p3-vm-icon {
+    width: 36px; height: 36px;
+    background: rgba(17,215,230,0.12);
+    border-radius: 8px;
+    display: flex; align-items: center; justify-content: center;
+    margin-bottom: 14px;
+  }
+
+  .p3-vm-icon svg { width: 18px; height: 18px; fill: var(--cyan); }
+
+  .p3-vm-card-title {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 22px;
+    color: var(--white);
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+  }
+
+  .p3-vm-card-text {
+    font-family: 'Barlow', sans-serif;
+    font-size: 12px;
+    color: rgba(255,255,255,0.55);
+    line-height: 1.7;
+  }
+
+  .p3-values-title {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--cyan);
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+  }
+
+  .p3-values-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+  }
+
+  .p3-value {
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.07);
+    padding: 18px 14px;
+    text-align: center;
+    border-radius: 4px;
+    transition: all 0.2s;
+  }
+
+  .p3-value-icon {
+    font-size: 22px;
+    margin-bottom: 8px;
+  }
+
+  .p3-value-title {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 11px;
+    font-weight: 800;
+    color: var(--white);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    line-height: 1.3;
+  }
+
+  /* ══════════════════════════════════════════════
+     PAGE 4 — PROJECT IFL
+  ══════════════════════════════════════════════ */
+  #p4 { background: var(--white); }
+
+  .p4-inner {
+    height: 100%;
+    padding: 52px 56px 44px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .p4-hero-band {
+    position: relative;
+    height: 220px;
+    background: var(--black);
+    overflow: hidden;
+    border-radius: 4px;
+    flex-shrink: 0;
+  }
+
+  .p4-hero-band::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, #0d2b2b 0%, var(--black) 70%),
+      repeating-linear-gradient(45deg, transparent, transparent 20px, rgba(17,215,230,0.02) 20px, rgba(17,215,230,0.02) 21px);
+  }
+
+  .p4-ifl-logo {
+    position: absolute;
+    left: 32px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .p4-ifl-name {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 64px;
+    color: var(--white);
+    letter-spacing: 8px;
+    line-height: 1;
+  }
+
+  .p4-ifl-sub {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 11px;
+    color: var(--cyan);
+    letter-spacing: 4px;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+
+  .p4-ifl-badge {
+    position: absolute;
+    right: 32px; top: 32px;
+    border: 2px solid var(--cyan);
+    padding: 8px 16px;
+    border-radius: 2px;
+  }
+
+  .p4-ifl-badge-text {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 10px;
+    font-weight: 800;
+    color: var(--cyan);
+    letter-spacing: 3px;
+    text-transform: uppercase;
+  }
+
+  .p4-ball-pattern {
+    position: absolute;
+    right: 80px; bottom: -20px;
+    opacity: 0.06;
+  }
+
+  .p4-stats-row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    flex-shrink: 0;
+  }
+
+  .p4-stat-card {
+    background: var(--black);
+    padding: 20px 16px;
+    border-radius: 4px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+  }
+
+  .p4-stat-card::before {
+    content: '';
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    height: 3px;
+    background: var(--cyan);
+  }
+
+  .p4-stat-num {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 42px;
+    color: var(--white);
+    letter-spacing: 2px;
+    line-height: 1;
+  }
+
+  .p4-stat-unit {
+    color: var(--cyan);
+  }
+
+  .p4-stat-label {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 10px;
+    color: var(--gray-dark);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-top: 4px;
+  }
+
+  .p4-content-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 20px;
+    flex: 1;
+  }
+
+  .p4-desc {
+    font-family: 'Barlow', sans-serif;
+    font-size: 13px;
+    color: #444;
+    line-height: 1.75;
+    margin-bottom: 16px;
+  }
+
+  .p4-edition-list {
+    margin-top: 12px;
+  }
+
+  .p4-edition-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 0;
+    border-bottom: 1px solid var(--gray);
+  }
+
+  .p4-edition-dot {
+    width: 8px; height: 8px;
+    background: var(--cyan);
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+
+  .p4-edition-text {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 12px;
+    color: var(--black);
+    letter-spacing: 0.5px;
+    font-weight: 600;
+  }
+
+  .p4-edition-year {
+    margin-left: auto;
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    color: var(--gray-dark);
+  }
+
+  .p4-photo-stack {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 12px;
+  }
+
+  .p4-photo {
+    background: #1a1a1a;
+    border-radius: 3px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .p4-photo::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, #1a3535 0%, #0B0B0B 100%);
+  }
+
+  /* ══════════════════════════════════════════════
+     PAGE 5 — ACHIEVEMENTS
+  ══════════════════════════════════════════════ */
+  #p5 { background: var(--gray); }
+
+  .p5-inner {
+    height: 100%;
+    padding: 52px 56px 44px;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+  }
+
+  .p5-stats-infographic {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  .p5-big-stat {
+    background: var(--black);
+    padding: 28px 24px;
+    border-radius: 4px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+  }
+
+  .p5-big-stat::after {
+    content: '';
+    position: absolute;
+    top: 0; right: 0;
+    width: 100px; height: 100px;
+    background: radial-gradient(circle, rgba(17,215,230,0.12) 0%, transparent 70%);
+  }
+
+  .p5-big-stat-icon {
+    width: 50px; height: 50px;
+    background: rgba(17,215,230,0.12);
+    border-radius: 12px;
+    display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0;
+  }
+
+  .p5-big-stat-icon svg { width: 24px; height: 24px; fill: var(--cyan); }
+
+  .p5-big-stat-content {}
+
+  .p5-big-num {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 48px;
+    color: var(--white);
+    letter-spacing: 2px;
+    line-height: 1;
+  }
+
+  .p5-big-num span { color: var(--cyan); }
+
+  .p5-big-label {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 11px;
+    color: rgba(255,255,255,0.5);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-top: 2px;
+  }
+
+  .p5-gallery {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .p5-gal-item {
+    background: #1a1a1a;
+    border-radius: 3px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .p5-gal-item::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, #0d2020 0%, #1a1a1a 100%);
+  }
+
+  .p5-gal-item:first-child {
+    grid-column: span 2;
+  }
+
+  .p5-gal-label {
+    position: absolute;
+    bottom: 10px; left: 10px;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 9px;
+    color: var(--cyan);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    z-index: 2;
+  }
+
+  /* ══════════════════════════════════════════════
+     PAGE 6 — EXPERTISE
+  ══════════════════════════════════════════════ */
+  #p6 { background: var(--white); }
+
+  .p6-inner {
+    height: 100%;
+    padding: 52px 56px 44px;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+  }
+
+  .p6-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 14px;
+    flex: 1;
+  }
+
+  .p6-card {
+    background: var(--gray);
+    padding: 20px 16px;
+    border-radius: 4px;
+    border-top: 2px solid transparent;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.2s;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .p6-card:nth-child(odd) { border-top-color: var(--black); }
+  .p6-card:nth-child(even) { border-top-color: var(--cyan); }
+
+  .p6-card:hover {
+    background: var(--black);
+  }
+
+  .p6-card-num {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 30px;
+    color: rgba(0,0,0,0.08);
+    line-height: 1;
+    position: absolute;
+    top: 12px; right: 14px;
+  }
+
+  .p6-card-icon {
+    width: 38px; height: 38px;
+    background: var(--black);
+    border-radius: 8px;
+    display: flex; align-items: center; justify-content: center;
+    margin-bottom: 14px;
+    flex-shrink: 0;
+  }
+
+  .p6-card-icon svg { width: 18px; height: 18px; fill: var(--cyan); }
+
+  .p6-card-title {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 13px;
+    font-weight: 800;
+    color: var(--black);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+    line-height: 1.3;
+  }
+
+  .p6-card-desc {
+    font-family: 'Barlow', sans-serif;
+    font-size: 10.5px;
+    color: #666;
+    line-height: 1.6;
+    margin-top: auto;
+  }
+
+  /* ══════════════════════════════════════════════
+     PAGE 7 — GALLERY
+  ══════════════════════════════════════════════ */
+  #p7 { background: var(--black); }
+
+  .p7-inner {
+    height: 100%;
+    padding: 52px 52px 44px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .p7-masonry {
+    flex: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1.4fr 1fr;
+    gap: 8px;
+  }
+
+  .gal {
+    position: relative;
+    background: #1a1a1a;
+    border-radius: 3px;
+    overflow: hidden;
+  }
+
+  .gal::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+  }
+
+  .gal-1::before { background: linear-gradient(135deg, #1a3535 0%, #0d1a1a 100%); }
+  .gal-2::before { background: linear-gradient(225deg, #1a2a20 0%, #0d1a12 100%); }
+  .gal-3::before { background: linear-gradient(135deg, #2a1a1a 0%, #1a0d0d 100%); }
+  .gal-4::before { background: linear-gradient(45deg, #1a1a2a 0%, #0d0d1a 100%); }
+  .gal-5::before { background: linear-gradient(135deg, #1a3535 0%, #0B0B0B 100%); }
+  .gal-6::before { background: linear-gradient(315deg, #2a2a1a 0%, #1a1a0d 100%); }
+  .gal-7::before { background: linear-gradient(135deg, #1a2535 0%, #0d1220 100%); }
+  .gal-8::before { background: linear-gradient(225deg, #2a1a2a 0%, #1a0d1a 100%); }
+  .gal-9::before { background: linear-gradient(45deg, #1a3525 0%, #0d1a12 100%); }
+
+  .gal:nth-child(1) { grid-column: span 2; }
+  .gal:nth-child(5) { grid-column: span 2; }
+  .gal:nth-child(8) { grid-row: span 2; }
+
+  .gal-tag {
+    position: absolute;
+    bottom: 10px; left: 10px;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 9px;
+    color: var(--cyan);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    z-index: 2;
+    background: rgba(0,0,0,0.6);
+    padding: 3px 8px;
+    border-radius: 2px;
+  }
+
+  .gal-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0.5) 0%, transparent 50%);
+    z-index: 1;
+  }
+
+  /* Camera/photo icon in gallery cells */
+  .gal-icon {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.08;
+  }
+
+  /* ══════════════════════════════════════════════
+     PAGE 8 — PARTNERS & PERSPECTIVES
+  ══════════════════════════════════════════════ */
+  #p8 { background: var(--black); }
+
+  .p8-inner {
+    height: 100%;
+    padding: 52px 56px 44px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    position: relative;
+    z-index: 5;
+  }
+
+  .p8-bg {
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(ellipse 80% 50% at 50% 100%, rgba(17,215,230,0.06) 0%, transparent 60%);
+  }
+
+  .p8-partners-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+  }
+
+  .p8-partner {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 4px;
+    padding: 20px 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .p8-partner-icon {
+    width: 40px; height: 40px;
+    background: rgba(17,215,230,0.1);
+    border-radius: 8px;
+    display: flex; align-items: center; justify-content: center;
+  }
+
+  .p8-partner-icon svg { width: 20px; height: 20px; fill: var(--cyan); }
+
+  .p8-partner-name {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--white);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1.3;
+  }
+
+  .p8-partner-type {
+    font-family: 'DM Mono', monospace;
+    font-size: 9px;
+    color: rgba(255,255,255,0.3);
+    text-align: center;
+  }
+
+  .p8-africa-section {
+    flex: 1;
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 24px;
+    align-items: center;
+  }
+
+  .p8-ambitions {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .p8-ambition-item {
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+  }
+
+  .p8-ambition-bullet {
+    width: 20px; height: 20px;
+    background: var(--cyan);
+    border-radius: 3px;
+    display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0;
+    margin-top: 2px;
+  }
+
+  .p8-ambition-bullet svg { width: 10px; height: 10px; fill: var(--black); }
+
+  .p8-ambition-text {
+    font-family: 'Barlow', sans-serif;
+    font-size: 12.5px;
+    color: rgba(255,255,255,0.65);
+    line-height: 1.6;
+  }
+
+  .p8-ambition-title {
+    display: block;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--white);
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-bottom: 2px;
+  }
+
+  .p8-map-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+  }
+
+  .p8-tagline-big {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 28px;
+    color: var(--white);
+    letter-spacing: 4px;
+    text-align: center;
+  }
+
+  .p8-tagline-big span { color: var(--cyan); }
+
+  .p8-footer-cta {
+    background: var(--cyan);
+    padding: 20px 28px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 4px;
+    flex-shrink: 0;
+  }
+
+  .p8-cta-left {}
+
+  .p8-cta-title {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 22px;
+    color: var(--black);
+    letter-spacing: 2px;
+  }
+
+  .p8-cta-subtitle {
+    font-family: 'Barlow', sans-serif;
+    font-size: 12px;
+    color: rgba(0,0,0,0.65);
+    margin-top: 2px;
+  }
+
+  .p8-cta-contact {
+    text-align: right;
+  }
+
+  .p8-cta-email {
+    font-family: 'DM Mono', monospace;
+    font-size: 12px;
+    color: var(--black);
+    font-weight: 500;
+  }
+
+  .p8-cta-slogan {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 14px;
+    color: rgba(0,0,0,0.5);
+    letter-spacing: 3px;
+    margin-top: 2px;
+  }
+
+  /* ─── TOOLBAR ─── */
+  .toolbar {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    height: 52px;
+    background: #0B0B0B;
+    border-bottom: 1px solid rgba(17,215,230,0.2);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 28px;
+    z-index: 9999;
+    backdrop-filter: blur(10px);
+  }
+
+  .tb-brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .tb-dot {
+    width: 8px; height: 8px;
+    background: var(--cyan);
+    border-radius: 50%;
+    box-shadow: 0 0 8px var(--cyan);
+  }
+
+  .tb-name {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 18px;
+    color: var(--white);
+    letter-spacing: 4px;
+  }
+
+  .tb-name span { color: var(--cyan); }
+
+  .tb-center {
+    display: flex;
+    gap: 6px;
+  }
+
+  .tb-page-btn {
+    width: 28px; height: 28px;
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 4px;
+    display: flex; align-items: center; justify-content: center;
+    cursor: pointer;
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    color: rgba(255,255,255,0.4);
+    transition: all 0.2s;
+    text-decoration: none;
+  }
+
+  .tb-page-btn:hover {
+    background: var(--cyan);
+    color: var(--black);
+    border-color: var(--cyan);
+  }
+
+  .tb-right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .tb-badge {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    color: rgba(255,255,255,0.3);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+
+  .tb-print-btn {
+    background: var(--cyan);
+    color: var(--black);
+    border: none;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    padding: 7px 16px;
+    border-radius: 3px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: opacity 0.2s;
+  }
+
+  .tb-print-btn:hover { opacity: 0.85; }
+
+  body { padding-top: 84px; }
+
+  /* ─── ENHANCED CARD HOVER ─── */
+  .p6-card:hover .p6-card-title { color: var(--cyan); }
+  .p6-card:hover .p6-card-desc { color: rgba(255,255,255,0.5); }
+  .p6-card:hover .p6-card-num { color: rgba(17,215,230,0.1); }
+  .p6-card:hover .p6-card-icon { background: var(--cyan); }
+  .p6-card:hover .p6-card-icon svg { fill: var(--black); }
+  .p6-card { transition: background 0.25s, border-color 0.25s; }
+
+  .p3-value:hover {
+    background: rgba(17,215,230,0.08);
+    border-color: rgba(17,215,230,0.3);
+  }
+
+  /* ─── COVER DECORATIVE LINES ─── */
+  .p1-cross-h {
+    position: absolute;
+    top: 38%;
+    left: 0; right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(17,215,230,0.07), transparent);
+  }
+
+  .p1-cross-v {
+    position: absolute;
+    left: 38%;
+    top: 0; bottom: 0;
+    width: 1px;
+    background: linear-gradient(to bottom, transparent, rgba(17,215,230,0.07), transparent);
+  }
+
+  /* ─── ANIMATED CYAN PULSE on cover ─── */
+  @keyframes pulse-ring {
+    0% { transform: scale(0.8); opacity: 0.4; }
+    100% { transform: scale(1.6); opacity: 0; }
+  }
+
+  .pulse-ring {
+    position: absolute;
+    border-radius: 50%;
+    border: 1px solid var(--cyan);
+    animation: pulse-ring 3s ease-out infinite;
+  }
+
+  /* ─── CORNER MARKS ─── */
+  .corner-mark {
+    position: absolute;
+    width: 20px; height: 20px;
+  }
+
+  .corner-mark::before, .corner-mark::after {
+    content: '';
+    position: absolute;
+    background: var(--cyan);
+  }
+
+  .corner-mark::before { width: 2px; height: 100%; }
+  .corner-mark::after { width: 100%; height: 2px; }
+
+  .cm-tl { top: 22px; left: 22px; }
+  .cm-tr { top: 22px; right: 22px; transform: scaleX(-1); }
+  .cm-bl { bottom: 22px; left: 22px; transform: scaleY(-1); }
+  .cm-br { bottom: 22px; right: 22px; transform: scale(-1); }
+
+  /* ─── PROGRESS BAR (page indicator) ─── */
+  .page-progress {
+    position: absolute;
+    bottom: 0; left: 0;
+    height: 2px;
+    background: var(--cyan);
+    opacity: 0.5;
+  }
+
+  /* ─── SECTION DIVIDER LINE ─── */
+  .section-divider {
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(90deg, var(--cyan), rgba(17,215,230,0.1), transparent);
+    margin: 6px 0 14px;
+  }
+
+  /* ─── WATERMARK ─── */
+  .page-watermark {
+    position: absolute;
+    bottom: 50px;
+    right: -30px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 120px;
+    color: rgba(0,0,0,0.03);
+    letter-spacing: -4px;
+    pointer-events: none;
+    white-space: nowrap;
+    transform: rotate(-90deg);
+    transform-origin: right center;
+  }
+
+  .page-watermark-light {
+    color: rgba(255,255,255,0.025);
+  }
+
+  /* ─── PRINT STYLES ─── */
+  @media print {
+    body { background: white; padding: 0; gap: 0; }
+    .page { box-shadow: none; }
+    .page-label { display: none; }
+    .toolbar { display: none; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ═══ TOOLBAR ═══ -->
+<div class="toolbar">
+  <div class="tb-brand">
+    <div class="tb-dot"></div>
+    <div class="tb-name">ADECAP <span>ENTERTAINMENT</span></div>
+  </div>
+  <div class="tb-center">
+    <a href="#p1" class="tb-page-btn">01</a>
+    <a href="#p2" class="tb-page-btn">02</a>
+    <a href="#p3" class="tb-page-btn">03</a>
+    <a href="#p4" class="tb-page-btn">04</a>
+    <a href="#p5" class="tb-page-btn">05</a>
+    <a href="#p6" class="tb-page-btn">06</a>
+    <a href="#p7" class="tb-page-btn">07</a>
+    <a href="#p8" class="tb-page-btn">08</a>
+  </div>
+  <div class="tb-right">
+    <div class="tb-badge">Portfolio 2023–2026</div>
+    <!-- <button class="tb-print-btn" onclick="window.print()">⬇ Exporter PDF</button> -->
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════
+     PAGE 1 — COVER
+══════════════════════════════════════ -->
+<div class="page-label">PAGE 01 — COVER</div>
+<div class="page" id="p1">
+  <div class="p1-bg-grid"></div>
+  <div class="p1-diag1"></div>
+  <div class="p1-diag2"></div>
+  <div class="p1-cyan-line"></div>
+  <div class="p1-cyan-line2"></div>
+  <div class="p1-top-bar"></div>
+  <div class="p1-cross-h"></div>
+  <div class="p1-cross-v"></div>
+  <div class="corner-mark cm-tl"></div>
+  <div class="corner-mark cm-tr"></div>
+  <div class="corner-mark cm-bl"></div>
+  <div class="corner-mark cm-br"></div>
+  <div class="pulse-ring" style="width:60px;height:60px;top:calc(38%% - 30px);left:calc(38%% - 30px);animation-delay:0s;"></div>
+  <div class="pulse-ring" style="width:60px;height:60px;top:calc(38%% - 30px);left:calc(38%% - 30px);animation-delay:1.5s;"></div>
+  <div class="page-watermark page-watermark-light">ADECAP</div>
+  <div class="page-progress" style="width:12.5%%;"></div>
+
+  <div class="p1-inner">
+    <!-- Header -->
+    <div class="p1-header">
+      <div class="p1-logo-wordmark">
+        <div class="p1-logo-main">ADECAP</div>
+        <div class="p1-logo-sub">ENTERTAINMENT</div>
+      </div>
+      <div class="p1-social">
+        <!-- Snapchat -->
+        <a class="p1-social-icon" href="https://snapchat.com/t/zHBvGB5l" target="_blank" rel="noopener noreferrer" aria-label="Snapchat">
+          <svg viewBox="0 0 24 24"><path d="M12 2C7.59 2 4 5.59 4 10.02c0 2.5 1.06 4.75 2.75 6.33.92.89 1.48 1.47 1.48 2.45 0 1.2-1.29 1.35-1.71 1.35-.23 0-.42-.03-.46-.04-.18-.04-.36.1-.36.29 0 .13.09.25.21.31.62.33 1.5.5 2.3.5 1.1 0 2.22-.24 2.22-.24s1.06 1.66 3.08 1.66c2.02 0 3.07-1.66 3.07-1.66s1.12.24 2.22.24c.8 0 1.68-.17 2.3-.5.12-.06.21-.18.21-.31 0-.19-.18-.33-.36-.29-.04.01-.23.04-.46.04-.43 0-1.71-.15-1.71-1.35 0-.98.56-1.56 1.48-2.45C18.94 14.77 20 12.52 20 10.02 20 5.59 16.41 2 12 2zM12 4c3.31 0 6 2.69 6 6.02 0 1.84-.96 3.24-2.44 4.25-.4.28-.63.72-.63 1.18 0 .89.81 1.02 1.16 1.02.4 0 .83-.08 1.2-.15-.4.51-1.16 1.12-2.7 1.12-1.76 0-2.75-1.28-2.75-1.28s-.99 1.28-2.75 1.28c-1.54 0-2.3-.61-2.7-1.12.37.07.8.15 1.2.15.35 0 1.16-.13 1.16-1.02 0-.46-.23-.9-.63-1.18C6.96 13.26 6 11.86 6 10.02 6 6.69 8.69 4 12 4z"/></svg>
+        </a>
+        <!-- TikTok -->
+        <a class="p1-social-icon" href="https://www.tiktok.com/@adecapentertainment?_r=1&_t=ZS-96Y8CmSD2Rc" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+          <svg viewBox="0 0 24 24"><path d="M16.44 2.06c-.08 0-.16.01-.24.01-1.35 0-2.46.53-3.26 1.38-.95.99-1.4 2.34-1.18 3.73.24 1.51 1.29 2.76 2.78 3.25v4.97c0 1.2-.34 2.33-.92 3.29-.33.54-.75 1.04-1.27 1.45-1.1.92-2.52 1.37-3.92 1.37-1.71 0-3.37-.54-4.76-1.54-.4-.28-.78-.6-1.12-.95-.22-.23-.55-.25-.79-.05-.24.19-.26.53-.05.76.44.46.92.88 1.44 1.25 1.73 1.22 3.8 1.82 5.84 1.82 1.75 0 3.47-.52 4.91-1.5.7-.44 1.34-.96 1.9-1.54.79-.81 1.37-1.8 1.73-2.87.4-1.2.58-2.47.52-3.76V7.4h-2.76c-.05 1.14-.3 2.25-.75 3.3-.58 1.41-1.5 2.64-2.65 3.55-.37.3-.8.55-1.26.74V9.08c.81-.29 1.57-.76 2.22-1.38.69-.66 1.2-1.45 1.51-2.34.15-.44.25-.9.3-1.36.02-.17.03-.34.03-.51 0-.96-.37-1.88-1.05-2.56-.71-.71-1.67-1.1-2.66-1.1z"/></svg>
+        </a>
+        <!-- X -->
+        <a class="p1-social-icon" href="https://x.com/adecap_?s=21" target="_blank" rel="noopener noreferrer" aria-label="X">
+          <svg viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.746l7.738-8.835L1.254 2.25H8.08l4.253 5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+        </a>
+        <!-- Instagram -->
+        <a class="p1-social-icon" href="https://www.instagram.com/adecap_entertainment?igsh=MTBvM2RwandlcWR2dw%3D%3D&utm_source=qr" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+          <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <!-- Hero -->
+    <div class="p1-hero">
+      <div class="p1-hero-img">
+        <!-- Stadium atmosphere gradient -->
+        <div style="position:absolute;inset:0;background:linear-gradient(160deg,#0d2020 0%,#0B0B0B 60%,#0d1a0d 100%);"></div>
+        <!-- Pitch lines decoration -->
+        <svg style="position:absolute;bottom:0;left:0;width:100%;height:60%;opacity:0.07;" viewBox="0 0 680 300" preserveAspectRatio="none">
+          <rect x="50" y="20" width="580" height="260" fill="none" stroke="#11D7E6" stroke-width="2"/>
+          <rect x="150" y="20" width="380" height="260" fill="none" stroke="#11D7E6" stroke-width="1"/>
+          <circle cx="340" cy="150" r="60" fill="none" stroke="#11D7E6" stroke-width="1.5"/>
+          <circle cx="340" cy="150" r="5" fill="#11D7E6"/>
+          <line x1="340" y1="20" x2="340" y2="280" stroke="#11D7E6" stroke-width="1"/>
+          <rect x="50" y="80" width="100" height="140" fill="none" stroke="#11D7E6" stroke-width="1"/>
+          <rect x="530" y="80" width="100" height="140" fill="none" stroke="#11D7E6" stroke-width="1"/>
+          <rect x="50" y="110" width="50" height="80" fill="none" stroke="#11D7E6" stroke-width="1"/>
+          <rect x="580" y="110" width="50" height="80" fill="none" stroke="#11D7E6" stroke-width="1"/>
+        </svg>
+        <!-- Cyan glow orb -->
+        <div style="position:absolute;top:20%;right:25%;width:180px;height:180px;background:radial-gradient(circle,rgba(17,215,230,0.12) 0%,transparent 70%);"></div>
+        <!-- Stylized athlete/stadium graphic -->
+        <svg class="p1-athlete" viewBox="0 0 340 380" xmlns="http://www.w3.org/2000/svg">
+          <!-- Stadium lights effect -->
+          <defs>
+            <radialGradient id="spotA" cx="50%" cy="20%" r="50%">
+              <stop offset="0%" stop-color="#11D7E6" stop-opacity="0.15"/>
+              <stop offset="100%" stop-color="#11D7E6" stop-opacity="0"/>
+            </radialGradient>
+            <radialGradient id="spotB" cx="30%" cy="15%" r="40%">
+              <stop offset="0%" stop-color="#ffffff" stop-opacity="0.06"/>
+              <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+            </radialGradient>
+          </defs>
+          <ellipse cx="170" cy="380" rx="200" ry="60" fill="url(#spotA)"/>
+          <ellipse cx="100" cy="380" rx="150" ry="40" fill="url(#spotB)"/>
+          <!-- Simplified footballer silhouette — celebrating, arms raised -->
+          <g fill="rgba(17,215,230,0.22)" stroke="rgba(17,215,230,0.35)" stroke-width="0.5">
+            <!-- Body -->
+            <ellipse cx="170" cy="150" rx="28" ry="38"/>
+            <!-- Head -->
+            <circle cx="170" cy="105" r="18"/>
+            <!-- Left arm raised -->
+            <path d="M 142 135 Q 110 100 95 75 Q 100 68 108 72 Q 120 95 148 130 Z"/>
+            <!-- Right arm raised -->
+            <path d="M 198 135 Q 230 100 245 75 Q 252 68 248 75 Q 235 95 202 130 Z"/>
+            <!-- Legs -->
+            <path d="M 155 188 Q 148 220 140 260 Q 148 264 156 261 Q 160 228 168 200 Z"/>
+            <path d="M 185 188 Q 192 220 200 260 Q 192 264 184 261 Q 180 228 172 200 Z"/>
+            <!-- Shoe L -->
+            <ellipse cx="147" cy="262" rx="14" ry="7" transform="rotate(-15 147 262)"/>
+            <!-- Shoe R -->
+            <ellipse cx="193" cy="262" rx="14" ry="7" transform="rotate(15 193 262)"/>
+          </g>
+          <!-- Football -->
+          <g>
+            <circle cx="100" cy="60" r="22" fill="rgba(255,255,255,0.1)" stroke="rgba(17,215,230,0.5)" stroke-width="1.5"/>
+            <path d="M 88 48 L 100 38 L 112 48 L 112 72 L 100 82 L 88 72 Z" fill="none" stroke="rgba(17,215,230,0.4)" stroke-width="1"/>
+            <circle cx="100" cy="60" r="5" fill="rgba(17,215,230,0.4)"/>
+          </g>
+          <!-- Stars / confetti -->
+          <g fill="rgba(17,215,230,0.6)">
+            <polygon points="240,40 243,50 253,50 245,56 248,66 240,60 232,66 235,56 227,50 237,50" transform="scale(0.6) translate(140,20)"/>
+            <polygon points="60,100 63,110 73,110 65,116 68,126 60,120 52,126 55,116 47,110 57,110" transform="scale(0.4) translate(120,130)"/>
+          </g>
+          <!-- Cyan glow line at bottom -->
+          <line x1="0" y1="378" x2="340" y2="378" stroke="rgba(17,215,230,0.3)" stroke-width="2"/>
+        </svg>
+      </div>
+
+      <div class="p1-hero-text">
+        <div class="p1-tagline">
+          DREAM IT,<span>DO IT.</span>
+        </div>
+        <div class="p1-portfolio-label">
+          <div class="p1-portfolio-line"></div>
+          <div class="p1-portfolio-text">Portfolio Institutionnel 2022–2026</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="p1-footer">
+      <div class="p1-footer-left">ADECAP ENTERTAINMENT © 2026 — DAKAR, SÉNÉGAL</div>
+      <div class="p1-badge">SPORTS &amp; ENTERTAINMENT</div>
+    </div>
+  </div>
+
+  <div class="p1-page-num">01</div>
+</div>
+
+
+<!-- ══════════════════════════════════════
+     PAGE 2 — ABOUT US
+══════════════════════════════════════ -->
+<div class="page-label">PAGE 02 — ABOUT US</div>
+<div class="page" id="p2">
+  <div class="p2-accent-bar"></div>
+  <div class="p2-left-stripe"></div>
+  <div class="corner-mark cm-tl" style="--cyan:#0B0B0B;"></div>
+  <div class="corner-mark cm-tr" style="--cyan:#0B0B0B;"></div>
+  <div class="corner-mark cm-bl" style="--cyan:#0B0B0B;"></div>
+  <div class="corner-mark cm-br" style="--cyan:#0B0B0B;"></div>
+  <div class="page-watermark">ABOUT</div>
+  <div class="page-progress" style="width:25%%;"></div>
+
+  <div class="p2-inner">
+    <!-- Header -->
+    <div>
+      <div class="section-header">
+        <div class="section-num">02</div>
+        <div class="section-title-block">
+          <div class="section-overline">WHO WE ARE</div>
+          <div class="section-title">À PROPOS DE<br>ADECAP ENTERTAINMENT</div>
+        </div>
+      </div>
+      <div class="cyan-rule"></div>
+      <div class="p2-body-text">
+        ADECAP Entertainment est une startup sénégalaise dédiée à la promotion du sport, de la culture et de l'entertainment en Afrique. Fondée par une équipe de passionnés, elle incarne une vision audacieuse : transformer le potentiel des jeunes talents africains en impact global. Nous créons des événements sportifs, des contenus médias et des expériences qui connectent les communautés.
+      </div>
+    </div>
+
+    <!-- Main grid -->
+    <div class="p2-grid">
+      <div class="p2-left">
+        <!-- Main photo block -->
+        <div class="p2-img-block" style="height:230px">
+          <img class="img-fill" src="./image/EquipeAdecap.jpg" alt="L'équipe ADECAP" />
+          <div style="position:absolute;bottom:0;left:0;right:0;padding:16px 20px;">
+            <div style="font-family:'Bebas Neue',sans-serif;font-size:18px;color:white;letter-spacing:2px;">L'ÉQUIPE ADECAP</div>
+            <!-- <div class="p2-img-label">Équipe ADECAP</div> -->
+          </div>
+        </div>
+
+        <!-- Stats row -->
+        <div class="p2-stats-row" style="margin-top:14px;">
+          <div class="p2-stat">
+            <div class="p2-stat-num">2022</div>
+            <div class="p2-stat-label">Fondée</div>
+          </div>
+          <div class="p2-stat">
+            <div class="p2-stat-num">4+</div>
+            <div class="p2-stat-label">Éditions</div>
+          </div>
+          <div class="p2-stat">
+            <div class="p2-stat-num">3</div>
+            <div class="p2-stat-label">Villes</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="p2-right">
+        <div class="p2-img-sm">
+          <img class="img-fill" src="./image/IFL2024.jpg" alt="Événement IFL 2024" />
+          <div class="p2-img-sm-label">ÉVÉNEMENT IFL 2024</div>
+        </div>
+
+        <div class="p2-img-sm">
+          <img class="img-fill" src="./image/Ceremonie_Trophees.jpg" alt="Cérémonie trophées" />
+          <div class="p2-img-sm-label">CÉRÉMONIE TROPHÉES</div>
+        </div>
+
+        <div class="p2-quote-box">
+          <div class="p2-quote-text">Construire le sport universitaire africain de demain. ADECAP donne une voix aux talents qui méritent d'etre vus.</div>
+          <div class="p2-quote-author">— FONDATEUR, ADECAP ENTERTAINMENT</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="page-footer-bar">
+      <div class="pf-brand">ADECAP ENTERTAINMENT — DAKAR, SÉNÉGAL</div>
+      <div style="display:flex;align-items:center;gap:8px;">
+        <div style="width:24px;height:1px;background:var(--cyan);"></div>
+        <div class="pf-num">02</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ══════════════════════════════════════
+     PAGE 3 — VISION & MISSION
+══════════════════════════════════════ -->
+<div class="page-label">PAGE 03 — VISION & MISSION</div>
+<div class="page" id="p3">
+  <div class="p3-bg"></div>
+  <div class="p3-diag"></div>
+  <div class="corner-mark cm-tl"></div>
+  <div class="corner-mark cm-tr"></div>
+  <div class="corner-mark cm-bl"></div>
+  <div class="corner-mark cm-br"></div>
+  <div class="page-watermark page-watermark-light">VISION</div>
+  <div class="page-progress" style="width:37.5%%;"></div>
+  <div style="position:absolute;bottom:-60px;left:-60px;width:280px;height:280px;border:1px solid rgba(17,215,230,0.05);transform:rotate(30deg);"></div>
+
+  <div class="p3-inner">
+    <!-- Header -->
+    <div class="p3-header">
+      <div style="display:flex;align-items:flex-end;gap:14px;">
+        <div class="section-num-light">03</div>
+        <div>
+          <div class="section-overline-light">NOTRE ADN</div>
+          <div class="section-title-light">VISION &amp; MISSION</div>
+        </div>
+      </div>
+      <div style="width:48px;height:2px;background:var(--cyan);margin-top:12px;"></div>
+    </div>
+
+    <!-- Vision / Mission cards -->
+    <div class="p3-vm-grid">
+      <div class="p3-vm-card">
+        <div class="p3-vm-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+        </div>
+        <div class="p3-vm-card-title">NOTRE VISION</div>
+        <div class="p3-vm-card-text">Devenir la référence incontournable du sport et de l'entertainment en Afrique de l'Ouest — en créant des plateformes qui révèlent, valorisent et exportent les talents africains au monde entier.</div>
+      </div>
+
+      <div class="p3-vm-card">
+        <div class="p3-vm-icon">
+          <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 3c1.93 0 3.5 1.57 3.5 3.5S13.93 13 12 13s-3.5-1.57-3.5-3.5S10.07 6 12 6zm7 13H5v-.23c0-.62.28-1.2.76-1.58C7.47 15.82 9.64 15 12 15s4.53.82 6.24 2.19c.48.38.76.97.76 1.58V19z"/></svg>
+        </div>
+        <div class="p3-vm-card-title">NOTRE MISSION</div>
+        <div class="p3-vm-card-text">Organiser des compétitions sportives d'excellence, produire des contenus médiatiques de qualité et développer des partenariats stratégiques pour impacter positivement les jeunes et les communautés africaines.</div>
+      </div>
+    </div>
+
+    <!-- Values -->
+    <div>
+      <div class="p3-values-title">NOS 4 VALEURS FONDAMENTALES</div>
+      <div class="p3-values-grid">
+        <div class="p3-value">
+          <div class="p3-value-icon">🤝</div>
+          <div class="p3-value-title">Inclusion<br>Sociale</div>
+        </div>
+        <div class="p3-value">
+          <div class="p3-value-icon">🏆</div>
+          <div class="p3-value-title">Excellence<br>Sportive</div>
+        </div>
+        <div class="p3-value">
+          <div class="p3-value-icon">🌍</div>
+          <div class="p3-value-title">Impact<br>Communautaire</div>
+        </div>
+        <div class="p3-value">
+          <div class="p3-value-icon">💡</div>
+          <div class="p3-value-title">Innovation &amp;<br>Créativité</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Inspirational imagery strip -->
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:4px;">
+      <div style="height:90px;background:rgba(255,255,255,0.04);border-radius:3px;border:1px solid rgba(255,255,255,0.07);position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center;">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="rgba(17,215,230,0.2)"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"/></svg>
+        <div style="position:absolute;bottom:8px;left:10px;font-family:'Barlow Condensed',sans-serif;font-size:8px;color:rgba(17,215,230,0.5);letter-spacing:2px;">VIDEO</div>
+      </div>
+      <div style="height:90px;background:rgba(255,255,255,0.04);border-radius:3px;border:1px solid rgba(255,255,255,0.07);position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center;">
+        <img src="./image/podium.jpg" alt="Podium" style="width:100%;height:100%;object-fit:cover;">
+        <!-- <svg width="28" height="28" viewBox="0 0 24 24" fill="rgba(17,215,230,0.2)"><path d="M19 5h-2V3H7v2H5c-1.1 0-2 .9-2 2v1c0 2.55 1.92 4.63 4.39 4.94.63 1.5 1.98 2.63 3.61 2.96V19H7v2h10v-2h-4v-3.1c1.63-.33 2.98-1.46 3.61-2.96C19.08 12.63 21 10.55 21 8V7c0-1.1-.9-2-2-2z"/></svg> -->
+        <div style="position:absolute;bottom:8px;left:10px;font-family:'Barlow Condensed',sans-serif;font-size:8px;color:rgba(17,215,230,0.5);letter-spacing:2px;">PODIUM</div>
+      </div>
+      <div style="height:90px;background:rgba(255,255,255,0.04);border-radius:3px;border:1px solid rgba(255,255,255,0.07);position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center;">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="rgba(17,215,230,0.2)"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg>
+        <div style="position:absolute;bottom:8px;left:10px;font-family:'Barlow Condensed',sans-serif;font-size:8px;color:rgba(17,215,230,0.5);letter-spacing:2px;">COMMUNAUTÉ</div>
+      </div>
+    </div>
+
+    <!-- inspirational strip -->
+    <div style="display:flex;align-items:center;gap:16px;padding:12px 18px;background:rgba(17,215,230,0.07);border-radius:4px;border-left:3px solid var(--cyan);margin-top:4px;">
+      <div style="font-family:'Bebas Neue',sans-serif;font-size:20px;color:var(--cyan);letter-spacing:3px;flex-shrink:0;">DREAM IT,</div>
+      <div style="width:1px;height:24px;background:rgba(17,215,230,0.3);"></div>
+      <div style="font-family:'Barlow',sans-serif;font-size:11.5px;color:rgba(255,255,255,0.5);line-height:1.6;">Chaque talent africain mérite une scène. Nous construisons cette scène, édition après édition, passion après passion.</div>
+    </div>
+
+    <!-- Footer -->
+    <div class="page-footer-bar" style="border-top-color:rgba(255,255,255,0.1);">
+      <div class="pf-brand" style="color:rgba(255,255,255,0.25);">ADECAP ENTERTAINMENT — DREAM IT, DO IT</div>
+      <div style="display:flex;align-items:center;gap:8px;">
+        <div style="width:24px;height:1px;background:var(--cyan);"></div>
+        <div class="pf-num">03</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ══════════════════════════════════════
+     PAGE 4 — PROJECT IFL
+══════════════════════════════════════ -->
+<div class="page-label">PAGE 04 — PROJET IFL</div>
+<div class="page" id="p4">
+  <div style="position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,var(--cyan),var(--black));"></div>
+  <div class="corner-mark cm-tl" style="--cyan:#0B0B0B;"></div>
+  <div class="corner-mark cm-tr" style="--cyan:#0B0B0B;"></div>
+  <div class="corner-mark cm-bl" style="--cyan:#0B0B0B;"></div>
+  <div class="corner-mark cm-br" style="--cyan:#0B0B0B;"></div>
+  <div class="page-watermark">IFL</div>
+  <div class="page-progress" style="width:50%%;"></div>
+
+  <div class="p4-inner">
+    <!-- Header -->
+    <div style="display:flex;align-items:flex-end;gap:14px;">
+      <div class="section-num">04</div>
+      <div>
+        <div class="section-overline">FLAGSHIP PROJECT</div>
+        <div class="section-title">PROJET IFL —<br>INSTITUTS FOOTBALL LEAGUE</div>
+      </div>
+    </div>
+
+    <!-- Hero band -->
+    <div class="p4-hero-band">
+      <div class="p4-ifl-logo">
+        <div class="p4-ifl-name">IFL</div>
+        <div class="p4-ifl-sub">Instituts Football League</div>
+      </div>
+      <div class="p4-ifl-badge">
+        <div class="p4-ifl-badge-text">Saison 2023 – 2026</div>
+      </div>
+      <!-- Diagonal shine -->
+      <div style="position:absolute;top:-40px;left:300px;width:3px;height:300px;background:linear-gradient(to bottom,transparent,rgba(17,215,230,0.3),transparent);transform:rotate(20deg);"></div>
+      <div style="position:absolute;top:-40px;left:330px;width:1px;height:300px;background:linear-gradient(to bottom,transparent,rgba(17,215,230,0.15),transparent);transform:rotate(20deg);"></div>
+      <!-- Field lines decoration -->
+      <svg class="p4-ball-pattern" width="200" height="200" viewBox="0 0 200 200" fill="none">
+        <circle cx="100" cy="100" r="95" stroke="rgba(17,215,230,0.15)" stroke-width="2"/>
+        <circle cx="100" cy="100" r="60" stroke="rgba(17,215,230,0.1)" stroke-width="1.5"/>
+        <line x1="100" y1="5" x2="100" y2="195" stroke="rgba(17,215,230,0.1)" stroke-width="1"/>
+        <path d="M 40 70 Q 100 20 160 70" stroke="rgba(17,215,230,0.1)" stroke-width="1" fill="none"/>
+        <path d="M 40 130 Q 100 180 160 130" stroke="rgba(17,215,230,0.1)" stroke-width="1" fill="none"/>
+        <circle cx="100" cy="100" r="12" stroke="rgba(17,215,230,0.3)" stroke-width="2"/>
+      </svg>
+    </div>
+
+    <!-- Stats -->
+    <div class="p4-stats-row">
+      <div class="p4-stat-card">
+        <div class="p4-stat-num">4<span class="p4-stat-unit"> ÉD.</span></div>
+        <div class="p4-stat-label">Éditions Organisées</div>
+      </div>
+      <div class="p4-stat-card">
+        <div class="p4-stat-num">30<span class="p4-stat-unit">+</span></div>
+        <div class="p4-stat-label">Instituts Participants</div>
+      </div>
+      <div class="p4-stat-card">
+        <div class="p4-stat-num">700<span class="p4-stat-unit">+</span></div>
+        <div class="p4-stat-label">Joueurs Impliqués</div>
+      </div>
+      <div class="p4-stat-card">
+        <div class="p4-stat-num">10k<span class="p4-stat-unit">+</span></div>
+        <div class="p4-stat-label">Spectateurs / Édition</div>
+      </div>
+    </div>
+
+    <!-- Content -->
+    <div class="p4-content-grid">
+      <div>
+        <div class="cyan-rule"></div>
+        <div class="p4-desc">L'IFL est la compétition phare d'ADECAP Entertainment. Elle réunit les universités, les instituts de formation et les grandes écoles du Sénégal autour du football, offrant aux étudiants une plateforme d'excellence sportive, de fair-play et de camaraderie. Chaque édition est un événement médiatique complet.</div>
+
+        <div class="p4-edition-list">
+          <div class="p4-edition-item">
+            <div class="p4-edition-dot"></div>
+            <div class="p4-edition-text">IFL Édition I — Fondation</div>
+            <div class="p4-edition-year">2023</div>
+          </div>
+          <div class="p4-edition-item">
+            <div class="p4-edition-dot"></div>
+            <div class="p4-edition-text">IFL Édition II — Expansion</div>
+            <div class="p4-edition-year">2024</div>
+          </div>
+          <div class="p4-edition-item">
+            <div class="p4-edition-dot"></div>
+            <div class="p4-edition-text">IFL Édition III — Consécration</div>
+            <div class="p4-edition-year">2025</div>
+          </div>
+          <div class="p4-edition-item">
+            <div class="p4-edition-dot"></div>
+            <div class="p4-edition-text">IFL Édition IV — Continental</div>
+            <div class="p4-edition-year">2026</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="p4-photo-stack">
+        <div class="p4-photo">
+          <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;opacity:0.2;">
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/3qgBmN07RBE?si=BHlycGK2vCtNSu1J&amp;start=20" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <!-- <svg width="40" height="40" viewBox="0 0 24 24" fill="var(--cyan)"><path d="M21 3H3c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h5v2h8v-2h5c1.1 0 1.99-.9 1.99-2L23 5c0-1.1-.9-2-2-2zm0 14H3V5h18v12z"/></svg> -->
+          </div>
+          <div style="position:absolute;bottom:10px;left:12px;font-family:'Barlow Condensed',sans-serif;font-size:9px;color:var(--cyan);letter-spacing:2px;text-transform:uppercase;">Match en direct</div>
+        </div>
+        <div class="p4-photo">
+          <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;opacity:0.2;">
+            <img src="./image/Remise-de-trophee.jpg" alt="remise de trophée" style="width:100%;height:100%;object-fit:cover;"/>
+            <!-- <svg width="40" height="40" viewBox="0 0 24 24" fill="var(--cyan)"><path d="M19 5h-2V3H7v2H5c-1.1 0-2 .9-2 2v1c0 2.55 1.92 4.63 4.39 4.94.63 1.5 1.98 2.63 3.61 2.96V19H7v2h10v-2h-4v-3.1c1.63-.33 2.98-1.46 3.61-2.96C19.08 12.63 21 10.55 21 8V7c0-1.1-.9-2-2-2z"/></svg> -->
+          </div>
+          <div style="position:absolute;bottom:10px;left:12px;font-family:'Barlow Condensed',sans-serif;font-size:9px;color:var(--cyan);letter-spacing:2px;text-transform:uppercase;">Remise de trophée</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="page-footer-bar">
+      <div class="pf-brand">ADECAP ENTERTAINMENT — PROJET IFL</div>
+      <div style="display:flex;align-items:center;gap:8px;">
+        <div style="width:24px;height:1px;background:var(--cyan);"></div>
+        <div class="pf-num">04</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════
+     PAGE 5 — PROJECT ADECAP SUPER LEAGUE
+══════════════════════════════════════ -->
+<div class="page-label">PAGE 04 — PROJET ADECAP SUPER LEAGUE</div>
+<div class="page" id="p4">
+  <div style="position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,var(--cyan),var(--black));"></div>
+  <div class="corner-mark cm-tl" style="--cyan:#0B0B0B;"></div>
+  <div class="corner-mark cm-tr" style="--cyan:#0B0B0B;"></div>
+  <div class="corner-mark cm-bl" style="--cyan:#0B0B0B;"></div>
+  <div class="corner-mark cm-br" style="--cyan:#0B0B0B;"></div>
+  <div class="page-watermark">IFL</div>
+  <div class="page-progress" style="width:50%%;"></div>
+
+  <div class="p4-inner">
+    <!-- Header -->
+    <div style="display:flex;align-items:flex-end;gap:14px;">
+      <div class="section-num">04</div>
+      <div>
+        <div class="section-overline">FLAGSHIP PROJECT</div>
+        <div class="section-title">TL221<br>Compétition de la communauté X (Twitter)</div>
+      </div>
+    </div>
+
+    <!-- Hero band -->
+    <div class="p4-hero-band">
+      <div class="p4-ifl-logo">
+        <div class="p4-ifl-name">ADECAP SUPER LEAGUE</div>
+        <div class="p4-ifl-sub">TL221 - Compétition de la communauté X (Twitter)</div>
+      </div>
+      <div class="p4-ifl-badge">
+        <div class="p4-ifl-badge-text">Saison 2025 – 2026</div>
+      </div>
+      <!-- Diagonal shine -->
+      <div style="position:absolute;top:-40px;left:300px;width:3px;height:300px;background:linear-gradient(to bottom,transparent,rgba(17,215,230,0.3),transparent);transform:rotate(20deg);"></div>
+      <div style="position:absolute;top:-40px;left:330px;width:1px;height:300px;background:linear-gradient(to bottom,transparent,rgba(17,215,230,0.15),transparent);transform:rotate(20deg);"></div>
+      <!-- Field lines decoration -->
+      <svg class="p4-ball-pattern" width="200" height="200" viewBox="0 0 200 200" fill="none">
+        <circle cx="100" cy="100" r="95" stroke="rgba(17,215,230,0.15)" stroke-width="2"/>
+        <circle cx="100" cy="100" r="60" stroke="rgba(17,215,230,0.1)" stroke-width="1.5"/>
+        <line x1="100" y1="5" x2="100" y2="195" stroke="rgba(17,215,230,0.1)" stroke-width="1"/>
+        <path d="M 40 70 Q 100 20 160 70" stroke="rgba(17,215,230,0.1)" stroke-width="1" fill="none"/>
+        <path d="M 40 130 Q 100 180 160 130" stroke="rgba(17,215,230,0.1)" stroke-width="1" fill="none"/>
+        <circle cx="100" cy="100" r="12" stroke="rgba(17,215,230,0.3)" stroke-width="2"/>
+      </svg>
+    </div>
+
+    <!-- Stats -->
+    <div class="p4-stats-row">
+      <div class="p4-stat-card">
+        <div class="p4-stat-num">1<span class="p4-stat-unit"> ÉD.</span></div>
+        <div class="p4-stat-label">Éditions Organisées</div>
+      </div>
+      <div class="p4-stat-card">
+        <div class="p4-stat-num">08<span class="p4-stat-unit">+</span></div>
+        <div class="p4-stat-label">équipes Participants</div>
+      </div>
+      <div class="p4-stat-card">
+        <div class="p4-stat-num">180<span class="p4-stat-unit">+</span></div>
+        <div class="p4-stat-label">Joueurs Impliqués</div>
+      </div>
+      <div class="p4-stat-card">
+        <div class="p4-stat-num">10K<span class="p4-stat-unit">+</span></div>
+        <div class="p4-stat-label">Spectateurs / Édition</div>
+      </div>
+    </div>
+
+    <!-- Content -->
+    <div class="p4-content-grid">
+      <div>
+        <div class="cyan-rule"></div>
+        <div class="p4-desc">
+          La ADECAP SUPER LEAGUE TL221 est une compétition communautaire née sur X réunissant les passionnés de football sénégalais et francophones.Elle oppose plusieurs fanbases des grands clubs européens comme le Real Madrid, le FC Barcelona, Manchester United ou le Paris Saint-Germain.La compétition mêle débats, humour, contenus viraux et rivalités sportives.
+          Elle est devenue un phénomène culturel majeur dans l’univers X sénégalais.<br>
+          <br>Dans l’univers X sénégalais, la compétition ADECAP SUPER LEAGUE TL221 est devenue un véritable rendez-vous pour les amateurs de football, où chaque communauté cherche à imposer sa domination numérique et son influence sur la timeline.
+        </div>
+
+        <div class="p4-edition-list">
+          <div class="p4-edition-item">
+            <div class="p4-edition-dot"></div>
+            <div class="p4-edition-text">TL221 Édition I — Fondation</div>
+            <div class="p4-edition-year">2025 - 2026</div>
+          </div>
+          <!-- <div class="p4-edition-item">
+            <div class="p4-edition-dot"></div>
+            <div class="p4-edition-text">TL221 Édition II — Expansion</div>
+            <div class="p4-edition-year">2023</div>
+          </div> -->
+          <!-- <div class="p4-edition-item">
+            <div class="p4-edition-dot"></div>
+            <div class="p4-edition-text">TL221 Édition III — Consécration</div>
+            <div class="p4-edition-year">2024</div>
+          </div> -->
+          <!-- <div class="p4-edition-item">
+            <div class="p4-edition-dot"></div>
+            <div class="p4-edition-text">TL221 Édition IV — Continental</div>
+            <div class="p4-edition-year">2025</div>
+          </div> -->
+        </div>
+      </div>
+
+      <div class="p4-photo-stack">
+        <div class="p4-photo">
+          <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;opacity:0.2;">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="var(--cyan)"><path d="M21 3H3c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h5v2h8v-2h5c1.1 0 1.99-.9 1.99-2L23 5c0-1.1-.9-2-2-2zm0 14H3V5h18v12z"/></svg>
+          </div>
+          <div style="position:absolute;bottom:10px;left:12px;font-family:'Barlow Condensed',sans-serif;font-size:9px;color:var(--cyan);letter-spacing:2px;text-transform:uppercase;">Match en direct</div>
+        </div>
+        <div class="p4-photo">
+          <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;opacity:0.2;">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="var(--cyan)"><path d="M19 5h-2V3H7v2H5c-1.1 0-2 .9-2 2v1c0 2.55 1.92 4.63 4.39 4.94.63 1.5 1.98 2.63 3.61 2.96V19H7v2h10v-2h-4v-3.1c1.63-.33 2.98-1.46 3.61-2.96C19.08 12.63 21 10.55 21 8V7c0-1.1-.9-2-2-2z"/></svg>
+          </div>
+          <div style="position:absolute;bottom:10px;left:12px;font-family:'Barlow Condensed',sans-serif;font-size:9px;color:var(--cyan);letter-spacing:2px;text-transform:uppercase;">Remise de trophée</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="page-footer-bar">
+      <div class="pf-brand">ADECAP ENTERTAINMENT — PROJET TL221</div>
+      <div style="display:flex;align-items:center;gap:8px;">
+        <div style="width:24px;height:1px;background:var(--cyan);"></div>
+        <div class="pf-num">04</div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- ══════════════════════════════════════
+     PAGE 5 — ACHIEVEMENTS
+══════════════════════════════════════ -->
+<div class="page-label">PAGE 05 — NOS RÉALISATIONS</div>
+<div class="page" id="p5">
+  <div style="position:absolute;top:0;right:0;width:200px;height:200px;background:radial-gradient(circle,rgba(17,215,230,0.06) 0%,transparent 70%);"></div>
+  <div class="corner-mark cm-tl" style="--cyan:#11D7E6;"></div>
+  <div class="corner-mark cm-tr" style="--cyan:#11D7E6;"></div>
+  <div class="corner-mark cm-bl" style="--cyan:#11D7E6;"></div>
+  <div class="corner-mark cm-br" style="--cyan:#11D7E6;"></div>
+  <div class="page-watermark">STATS</div>
+  <div class="page-progress" style="width:62.5%%;"></div>
+
+  <div class="p5-inner">
+    <!-- Header -->
+    <div style="display:flex;align-items:flex-end;gap:14px;">
+      <div class="section-num">05</div>
+      <div>
+        <div class="section-overline">IMPACT &amp; RÉSULTATS</div>
+        <div class="section-title">NOS RÉALISATIONS</div>
+      </div>
+    </div>
+    <div class="cyan-rule" style="margin-top:-10px;"></div>
+
+    <!-- Big stats infographic -->
+    <div class="p5-stats-infographic">
+      <div class="p5-big-stat">
+        <div class="p5-big-stat-icon">
+          <svg viewBox="0 0 24 24"><path d="M19 5h-2V3H7v2H5c-1.1 0-2 .9-2 2v1c0 2.55 1.92 4.63 4.39 4.94.63 1.5 1.98 2.63 3.61 2.96V19H7v2h10v-2h-4v-3.1c1.63-.33 2.98-1.46 3.61-2.96C19.08 12.63 21 10.55 21 8V7c0-1.1-.9-2-2-2z"/></svg>
+        </div>
+        <div class="p5-big-stat-content">
+          <div class="p5-big-num">4 <span>ÉD.</span></div>
+          <div class="p5-big-label">Éditions Réussies</div>
+        </div>
+      </div>
+
+      <div class="p5-big-stat">
+        <div class="p5-big-stat-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 3L1 9l4 2.18v6L12 21l7-3.82v-6l2-1.09V17h2V9L12 3zm6.82 6L12 12.72 5.18 9 12 5.28 18.82 9zM17 15.99l-5 2.73-5-2.73v-3.72L12 15l5-2.73v3.72z"/></svg>
+        </div>
+        <div class="p5-big-stat-content">
+          <div class="p5-big-num">30<span></span></div>
+          <div class="p5-big-label">Institutions et équipes Participantes</div>
+        </div>
+      </div>
+
+      <div class="p5-big-stat">
+        <div class="p5-big-stat-icon">
+          <svg viewBox="0 0 24 24"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg>
+        </div>
+        <div class="p5-big-stat-content">
+          <div class="p5-big-num">850<span>+</span></div>
+          <div class="p5-big-label">Joueurs Impliqués</div>
+        </div>
+      </div>
+
+      <div class="p5-big-stat">
+        <div class="p5-big-stat-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 15v-4H7l5-8v4h4l-5 8z"/></svg>
+        </div>
+        <div class="p5-big-stat-content">
+          <div class="p5-big-num">20K<span>+</span></div>
+          <div class="p5-big-label">Interactions Digitales</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Gallery -->
+    <div class="p5-gallery">
+      <div class="p5-gal-item">
+        <div style="position:absolute;inset:0;background:linear-gradient(135deg,#1a3535,#0d1a1a);display:flex;align-items:center;justify-content:center;opacity:0.8;">
+          <img src="./image/Finale-IFL-2024.jpg" alt="finale ifl" style="width:100%;height:100%;object-fit:cover;" />
+          <!-- <svg width="36" height="36" viewBox="0 0 24 24" fill="rgba(17,215,230,0.2)"><path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"/></svg> -->
+        </div>
+        <div class="p5-gal-label">Grand Finale IFL 2024</div>
+      </div>
+      <div class="p5-gal-item">
+        <div style="position:absolute;inset:0; background:linear-gradient(135deg,#1a2a20,#0d1a12);display:flex;align-items:center;justify-content:center;opacity:0.8;">
+          <img src="./image/Trophee-Champion.jpg" alt="trophée champion" style="width:100%; height:100%;object-fit:cover;"/>
+          <!-- <svg width="36" height="36" viewBox="0 0 24 24" fill="rgba(17,215,230,0.2)"><path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"/></svg> -->
+        </div>
+        <div class="p5-gal-label">Trophée Champion</div>
+      </div>
+      <div class="p5-gal-item">
+        <div style="position:absolute;inset:0;background:linear-gradient(135deg,#2a1a1a,#1a0d0d);display:flex;align-items:center;justify-content:center;opacity:0.8;">
+          <img src="./image/Fans-et-supporters.jpg" alt="fans et supporters" style="width:100%;height:100%;object-fit:cover;"/>
+          <!-- <svg width="36" height="36" viewBox="0 0 24 24" fill="rgba(17,215,230,0.2)"><path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"/></svg> -->
+        </div>
+        <div class="p5-gal-label">Fans &amp; Supporters</div>
+      </div>
+      <div class="p5-gal-item">
+        <div style="position:absolute;inset:0;background:linear-gradient(135deg,#1a1a2a,#0d0d1a);display:flex;align-items:center;justify-content:center;opacity:0.8;">
+          <img src="./image/Equipe-Medias.jpg" alt="équipe médias" style="width:100%;height:100%;object-fit:cover;"/>
+          <!-- <svg width="36" height="36" viewBox="0 0 24 24" fill="rgba(17,215,230,0.2)"><path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"/></svg> -->
+        </div>
+        <div class="p5-gal-label">Équipe Médias</div>
+      </div>
+      <div class="p5-gal-item" style="grid-column:span 2;">
+        <div style="position:absolute;inset:0;background:linear-gradient(135deg,#1a3535,#0B0B0B);display:flex;align-items:center;justify-content:center;opacity:0.8;">
+          <img src="./image/Ambiance-Stade.jpg" alt="ambiance stade" style="width:100%;height:100%;object-fit:cover;" />
+          <!-- <svg width="36" height="36" viewBox="0 0 24 24" fill="rgba(17,215,230,0.2)"><path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"/></svg> -->
+        </div>
+        <div class="p5-gal-label">Ambiance Stade</div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="page-footer-bar" style="background:var(--gray);">
+      <div class="pf-brand">ADECAP ENTERTAINMENT — NOS RÉALISATIONS</div>
+      <div style="display:flex;align-items:center;gap:8px;">
+        <div style="width:24px;height:1px;background:var(--cyan);"></div>
+        <div class="pf-num">05</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ══════════════════════════════════════
+     PAGE 6 — EXPERTISE
+══════════════════════════════════════ -->
+<div class="page-label">PAGE 06 — NOTRE EXPERTISE</div>
+<div class="page" id="p6">
+  <div style="position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,var(--black),var(--cyan));"></div>
+  <div class="corner-mark cm-tl" style="--cyan:#0B0B0B;"></div>
+  <div class="corner-mark cm-tr" style="--cyan:#0B0B0B;"></div>
+  <div class="corner-mark cm-bl" style="--cyan:#0B0B0B;"></div>
+  <div class="corner-mark cm-br" style="--cyan:#0B0B0B;"></div>
+  <div class="page-watermark">SKILLS</div>
+  <div class="page-progress" style="width:75%%;"></div>
+
+  <div class="p6-inner">
+    <!-- Header -->
+    <div style="display:flex;justify-content:space-between;align-items:flex-end;">
+      <div style="display:flex;align-items:flex-end;gap:14px;">
+        <div class="section-num">06</div>
+        <div>
+          <div class="section-overline">SAVOIR-FAIRE</div>
+          <div class="section-title">NOTRE EXPERTISE</div>
+        </div>
+      </div>
+      <div style="font-family:'Barlow',sans-serif;font-size:12px;color:#888;max-width:200px;text-align:right;line-height:1.5;">Une offre complète pour accompagner votre marque dans l'univers du sport et de l'entertainment.</div>
+    </div>
+    <div class="cyan-rule" style="margin-top:-8px;"></div>
+
+    <!-- Cards grid -->
+    <div class="p6-grid">
+      <div class="p6-card">
+        <div class="p6-card-num">01</div>
+        <div class="p6-card-icon">
+          <svg viewBox="0 0 24 24"><path d="M17 12h-5v5h5v-5zM16 1v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2h-1V1h-2zm3 18H5V8h14v11z"/></svg>
+        </div>
+        <div class="p6-card-title">Event<br>Management</div>
+        <div class="p6-card-desc">Organisation complète d'événements sportifs et culturels de A à Z.</div>
+      </div>
+
+      <div class="p6-card">
+        <div class="p6-card-num">02</div>
+        <div class="p6-card-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        </div>
+        <div class="p6-card-title">Sports<br>Branding</div>
+        <div class="p6-card-desc">Identité visuelle, naming et univers de marque pour vos équipes.</div>
+      </div>
+
+      <div class="p6-card">
+        <div class="p6-card-num">03</div>
+        <div class="p6-card-icon">
+          <svg viewBox="0 0 24 24"><path d="M17 10.5V7c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1v-3.5l4 4v-11l-4 4z"/></svg>
+        </div>
+        <div class="p6-card-title">Media<br>Production</div>
+        <div class="p6-card-desc">Vidéo, photo, live streaming et couverture médiatique événementielle.</div>
+      </div>
+
+      <div class="p6-card">
+        <div class="p6-card-num">04</div>
+        <div class="p6-card-icon">
+          <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm-7 3c1.93 0 3.5 1.57 3.5 3.5S14.93 14 13 14s-3.5-1.57-3.5-3.5S11.07 7 13 7zM4 18v-.5c0-2.33 3.67-3.5 5.5-3.5.28 0 .58.02.89.06C9.01 15.07 8.5 16.22 8.5 17.5V18H4zm16 0H9.5v-.5c0-2.33 3.67-3.5 5.5-3.5S20.5 15.17 20.5 17.5V18H20z"/></svg>
+        </div>
+        <div class="p6-card-title">Sponsoring &amp;<br>Partnerships</div>
+        <div class="p6-card-desc">Développement de partenariats stratégiques et gestion sponsors.</div>
+      </div>
+
+      <div class="p6-card">
+        <div class="p6-card-num">05</div>
+        <div class="p6-card-icon">
+          <svg viewBox="0 0 24 24"><path d="M20 8h-3V4H3c-1.1 0-2 .9-2 2v11h2c0 1.66 1.34 3 3 3s3-1.34 3-3h6c0 1.66 1.34 3 3 3s3-1.34 3-3h2v-5l-3-4zM6 18.5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm13.5-9l1.96 2.5H17V9.5h2.5zm-1.5 9c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/></svg>
+        </div>
+        <div class="p6-card-title">Logistique &amp;<br>Production</div>
+        <div class="p6-card-desc">Coordination terrain, matériel, sécurité et gestion opérationnelle.</div>
+      </div>
+
+      <div class="p6-card">
+        <div class="p6-card-num">06</div>
+        <div class="p6-card-icon">
+          <svg viewBox="0 0 24 24"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg>
+        </div>
+        <div class="p6-card-title">Community<br>Management</div>
+        <div class="p6-card-desc">Animation de communautés en ligne autour du sport et de vos marques.</div>
+      </div>
+
+      <div class="p6-card">
+        <div class="p6-card-num">07</div>
+        <div class="p6-card-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 15v-4H7l5-8v4h4l-5 8z"/></svg>
+        </div>
+        <div class="p6-card-title">Digital<br>Communication</div>
+        <div class="p6-card-desc">Stratégie digitale, content creation et campagnes réseaux sociaux.</div>
+      </div>
+
+      <div class="p6-card">
+        <div class="p6-card-num">08</div>
+        <div class="p6-card-icon">
+          <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 3c1.93 0 3.5 1.57 3.5 3.5S14.93 14 13 14s-3.5-1.57-3.5-3.5S11.07 6 13 6zM4 18v-.5c0-2.33 3.67-3.5 5.5-3.5.28 0 .58.02.89.06C9.01 15.07 8.5 16.22 8.5 17.5V18H4zm16 0H9.5v-.5c0-2.33 3.67-3.5 5.5-3.5S20.5 15.17 20.5 17.5V18H20z"/></svg>
+        </div>
+        <div class="p6-card-title">Consulting<br>Sportif</div>
+        <div class="p6-card-desc">Accompagnement stratégique, structuration et développement de projets sportifs.</div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="page-footer-bar">
+      <div class="pf-brand">ADECAP ENTERTAINMENT — NOTRE EXPERTISE</div>
+      <div style="display:flex;align-items:center;gap:8px;">
+        <div style="width:24px;height:1px;background:var(--cyan);"></div>
+        <div class="pf-num">06</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ══════════════════════════════════════
+     PAGE 7 — GALLERY
+══════════════════════════════════════ -->
+<div class="page-label">PAGE 07 — GALERIE PHOTOS</div>
+<div class="page" id="p7">
+  <div style="position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,transparent,var(--cyan),transparent);"></div>
+  <div class="corner-mark cm-tl"></div>
+  <div class="corner-mark cm-tr"></div>
+  <div class="corner-mark cm-bl"></div>
+  <div class="corner-mark cm-br"></div>
+  <div class="page-watermark page-watermark-light">GALLERY</div>
+  <div class="page-progress" style="width:87.5%%;"></div>
+
+  <div class="p7-inner">
+    <!-- Header -->
+    <div style="display:flex;justify-content:space-between;align-items:center;">
+      <div style="display:flex;align-items:flex-end;gap:14px;">
+        <div class="section-num-light">07</div>
+        <div>
+          <div class="section-overline-light">MOMENTS FORTS</div>
+          <div class="section-title-light">GALERIE PHOTOS</div>
+        </div>
+      </div>
+      <div style="font-family:'DM Mono',monospace;font-size:9px;color:rgba(255,255,255,0.25);letter-spacing:2px;">ÉDITIONS 2022–2026</div>
+    </div>
+
+    <!-- Masonry gallery -->
+    <div class="p7-masonry">
+      <div class="gal gal-1">
+        <div class="gal-overlay"></div>
+        <div class="gal-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="white"><path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"/></svg></div>
+        <div class="gal-tag">Match — Finale IFL</div>
+      </div>
+      <div class="gal gal-2">
+        <div class="gal-overlay"></div>
+        <div class="gal-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M19 5h-2V3H7v2H5c-1.1 0-2 .9-2 2v1c0 2.55 1.92 4.63 4.39 4.94.63 1.5 1.98 2.63 3.61 2.96V19H7v2h10v-2h-4v-3.1c1.63-.33 2.98-1.46 3.61-2.96C19.08 12.63 21 10.55 21 8V7c0-1.1-.9-2-2-2z"/></svg></div>
+        <div class="gal-tag">Trophée</div>
+      </div>
+      <div class="gal gal-3">
+        <div class="gal-overlay"></div>
+        <div class="gal-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"/></svg></div>
+        <div class="gal-tag">Interview</div>
+      </div>
+      <div class="gal gal-4">
+        <div class="gal-overlay"></div>
+        <div class="gal-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg></div>
+        <div class="gal-tag">Équipe</div>
+      </div>
+      <div class="gal gal-5">
+        <div class="gal-overlay"></div>
+        <div class="gal-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="white"><path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"/></svg></div>
+        <div class="gal-tag">Ambiance Stade</div>
+      </div>
+      <div class="gal gal-6">
+        <div class="gal-overlay"></div>
+        <div class="gal-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M17 10.5V7c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1v-3.5l4 4v-11l-4 4z"/></svg></div>
+        <div class="gal-tag">Livestream</div>
+      </div>
+      <div class="gal gal-7">
+        <div class="gal-overlay"></div>
+        <div class="gal-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 15v-4H7l5-8v4h4l-5 8z"/></svg></div>
+        <div class="gal-tag">Action</div>
+      </div>
+      <div class="gal gal-8">
+        <div class="gal-overlay"></div>
+        <div class="gal-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg></div>
+        <div class="gal-tag">Joueurs</div>
+      </div>
+      <div class="gal gal-9">
+        <div class="gal-overlay"></div>
+        <div class="gal-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div>
+        <div class="gal-tag">Fans</div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="page-footer-bar" style="border-top-color:rgba(255,255,255,0.1);padding-top:10px;">
+      <div class="pf-brand" style="color:rgba(255,255,255,0.25);">ADECAP ENTERTAINMENT — GALERIE</div>
+      <div style="display:flex;align-items:center;gap:8px;">
+        <div style="width:24px;height:1px;background:var(--cyan);"></div>
+        <div class="pf-num">07</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ══════════════════════════════════════
+     PAGE 8 — PARTNERS & PERSPECTIVES
+══════════════════════════════════════ -->
+<div class="page-label">PAGE 08 — PARTENAIRES & PERSPECTIVES</div>
+<div class="page" id="p8">
+  <div class="p8-bg"></div>
+  <div style="position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,var(--cyan),var(--black),var(--cyan));"></div>
+  <div class="corner-mark cm-tl"></div>
+  <div class="corner-mark cm-tr"></div>
+  <div class="corner-mark cm-bl"></div>
+  <div class="corner-mark cm-br"></div>
+  <div class="page-watermark page-watermark-light">FUTURE</div>
+  <div class="page-progress" style="width:100%%;"></div>
+
+  <div class="p8-inner">
+    <!-- Header -->
+    <div style="display:flex;align-items:flex-end;gap:14px;">
+      <div class="section-num-light">08</div>
+      <div>
+        <div class="section-overline-light">ÉCOSYSTÈME &amp; AVENIR</div>
+        <div class="section-title-light">PARTENAIRES &amp; PERSPECTIVES</div>
+      </div>
+    </div>
+    <div style="width:48px;height:2px;background:var(--cyan);margin-top:-8px;"></div>
+
+    <!-- Partners -->
+    <div>
+      <div style="font-family:'Barlow Condensed',sans-serif;font-size:10px;font-weight:700;color:var(--cyan);letter-spacing:4px;text-transform:uppercase;margin-bottom:12px;">PARTENAIRES &amp; INSTITUTIONS</div>
+      <div class="p8-partners-grid">
+        <div class="p8-partner">
+          <div class="p8-partner-icon">
+            <svg viewBox="0 0 24 24"><path d="M12 3L1 9l4 2.18v6L12 21l7-3.82v-6l2-1.09V17h2V9L12 3zm6.82 6L12 12.72 5.18 9 12 5.28 18.82 9zM17 15.99l-5 2.73-5-2.73v-3.72L12 15l5-2.73v3.72z"/></svg>
+          </div>
+          <div class="p8-partner-name">Universités de Dakar</div>
+          <div class="p8-partner-type">Institutionnel</div>
+        </div>
+        <div class="p8-partner">
+          <div class="p8-partner-icon">
+            <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 15v-4H7l5-8v4h4l-5 8z"/></svg>
+          </div>
+          <div class="p8-partner-name">Médias Sénégalais</div>
+          <div class="p8-partner-type">Médias</div>
+        </div>
+        <div class="p8-partner">
+          <div class="p8-partner-icon">
+            <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm-7 3c1.93 0 3.5 1.57 3.5 3.5S14.93 14 13 14s-3.5-1.57-3.5-3.5S11.07 7 13 7z"/></svg>
+          </div>
+          <div class="p8-partner-name">Sponsors Privés</div>
+          <div class="p8-partner-type">Corporate</div>
+        </div>
+        <div class="p8-partner">
+          <div class="p8-partner-icon">
+            <svg viewBox="0 0 24 24"><path d="M19 5h-2V3H7v2H5c-1.1 0-2 .9-2 2v1c0 2.55 1.92 4.63 4.39 4.94.63 1.5 1.98 2.63 3.61 2.96V19H7v2h10v-2h-4v-3.1c1.63-.33 2.98-1.46 3.61-2.96C19.08 12.63 21 10.55 21 8V7c0-1.1-.9-2-2-2z"/></svg>
+          </div>
+          <div class="p8-partner-name">Fédérations Sportives</div>
+          <div class="p8-partner-type">Sport</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Africa + Ambitions -->
+    <div class="p8-africa-section">
+      <div class="p8-ambitions">
+        <div style="font-family:'Barlow Condensed',sans-serif;font-size:10px;font-weight:700;color:var(--cyan);letter-spacing:4px;text-transform:uppercase;margin-bottom:14px;">PERSPECTIVES 2026–2030</div>
+        <div class="p8-ambition-item">
+          <div class="p8-ambition-bullet">
+            <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+          </div>
+          <div class="p8-ambition-text">
+            <span class="p8-ambition-title">Expansion Régionale</span>
+            Lancement de l'IFL au Sénégal, Côte d'Ivoire et Ghana d'ici 2027.
+          </div>
+        </div>
+        <div class="p8-ambition-item">
+          <div class="p8-ambition-bullet">
+            <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+          </div>
+          <div class="p8-ambition-text">
+            <span class="p8-ambition-title">Plateforme Digitale</span>
+            Application mobile ADECAP pour le suivi des compétitions en temps réel.
+          </div>
+        </div>
+        <div class="p8-ambition-item">
+          <div class="p8-ambition-bullet">
+            <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+          </div>
+          <div class="p8-ambition-text">
+            <span class="p8-ambition-title">Académie de Talents</span>
+            Création d'une académie de développement pour les jeunes sportifs africains.
+          </div>
+        </div>
+        <div class="p8-ambition-item">
+          <div class="p8-ambition-bullet">
+            <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+          </div>
+          <div class="p8-ambition-text">
+            <span class="p8-ambition-title">Partenariats Internationaux</span>
+            Développement de liens avec des clubs et ligues professionnelles mondiales.
+          </div>
+        </div>
+      </div>
+
+      <!-- Africa Map -->
+      <div class="p8-map-area">
+        <svg viewBox="0 0 260 300" width="220" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <radialGradient id="africaGlow" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stop-color="rgba(17,215,230,0.08)"/>
+              <stop offset="100%" stop-color="transparent"/>
+            </radialGradient>
+          </defs>
+          <ellipse cx="130" cy="150" rx="120" ry="140" fill="url(#africaGlow)"/>
+          <!-- Simplified Africa continent shape -->
+          <path d="M 110 20 L 140 18 L 160 25 L 170 40 L 175 60 L 170 80 L 180 100 L 185 130 L 180 160 L 175 185 L 165 210 L 150 235 L 130 255 L 115 240 L 105 220 L 95 200 L 80 180 L 70 160 L 65 130 L 70 105 L 75 80 L 80 60 L 85 40 L 95 25 Z"
+                fill="rgba(17,215,230,0.08)" stroke="rgba(17,215,230,0.25)" stroke-width="1.5"/>
+          <!-- Country dividers (minimal) -->
+          <line x1="110" y1="60" x2="130" y2="65" stroke="rgba(17,215,230,0.15)" stroke-width="0.8"/>
+          <line x1="90" y1="110" x2="140" y2="105" stroke="rgba(17,215,230,0.15)" stroke-width="0.8"/>
+          <line x1="80" y1="155" x2="165" y2="150" stroke="rgba(17,215,230,0.15)" stroke-width="0.8"/>
+          <!-- Dakar pin -->
+          <circle cx="82" cy="95" r="5" fill="var(--cyan)" opacity="0.9"/>
+          <circle cx="82" cy="95" r="10" fill="none" stroke="var(--cyan)" stroke-width="1" opacity="0.5"/>
+          <circle cx="82" cy="95" r="15" fill="none" stroke="var(--cyan)" stroke-width="0.5" opacity="0.2"/>
+          <text x="94" y="98" font-family="'Barlow Condensed',sans-serif" font-size="8" fill="var(--cyan)" letter-spacing="1" font-weight="700">DAKAR</text>
+          <!-- Other dots representing expansion -->
+          <circle cx="120" cy="135" r="3" fill="rgba(17,215,230,0.4)"/>
+          <circle cx="110" cy="165" r="3" fill="rgba(17,215,230,0.3)"/>
+          <circle cx="155" cy="120" r="3" fill="rgba(17,215,230,0.3)"/>
+        </svg>
+        <div class="p8-tagline-big">FROM <span>SENEGAL</span><br>TO AFRICA.</div>
+      </div>
+    </div>
+
+    <!-- CTA Footer -->
+    <div class="p8-footer-cta">
+      <div class="p8-cta-left">
+        <div class="p8-cta-title">REJOIGNEZ L'AVENTURE ADECAP</div>
+        <div class="p8-cta-subtitle">Partenariats, investissements &amp; collaborations</div>
+      </div>
+      <div class="p8-cta-contact">
+        <div class="p8-cta-email">contact@adecap-entertainment.com</div>
+        <div class="p8-cta-slogan">DREAM IT, DO IT</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ EDIT GUIDE ═══ -->
+<div style="width:794px;background:#111;border:1px solid rgba(17,215,230,0.2);border-radius:6px;padding:28px 32px;margin-top:8px;margin-bottom:40px;font-family:'Barlow',sans-serif;">
+  <div style="font-family:'Bebas Neue',sans-serif;font-size:22px;color:#11D7E6;letter-spacing:3px;margin-bottom:16px;">GUIDE D'ÉDITION — ADECAP PORTFOLIO</div>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;">
+    <div>
+      <div style="font-size:11px;font-weight:700;color:#11D7E6;letter-spacing:2px;text-transform:uppercase;margin-bottom:8px;">IMAGES REMPLAÇABLES</div>
+      <div style="font-size:12px;color:#888;line-height:1.8;">
+        • Chaque bloc sombre avec une icône est un <b style="color:#ccc;">emplacement photo</b><br>
+        • Dans Canva/Figma : double-cliquer pour remplacer<br>
+        • Format recommandé : <b style="color:#ccc;">JPG 1200×800px min</b><br>
+        • Photo de couverture : format portrait 800×1100px<br>
+        • Galerie page 7 : 9 photos action/événement
+      </div>
+    </div>
+    <div>
+      <div style="font-size:11px;font-weight:700;color:#11D7E6;letter-spacing:2px;text-transform:uppercase;margin-bottom:8px;">TEXTES ÉDITABLES</div>
+      <div style="font-size:12px;color:#888;line-height:1.8;">
+        • Tous les textes sont modifiables directement<br>
+        • Variables CSS dans <b style="color:#ccc;">:root</b> → couleurs éditables<br>
+        • Police principale : <b style="color:#ccc;">Bebas Neue</b> (titres)<br>
+        • Police corps : <b style="color:#ccc;">Barlow / Barlow Condensed</b><br>
+        • Export PDF : bouton "Exporter PDF" en haut
+      </div>
+    </div>
+    <div>
+      <div style="font-size:11px;font-weight:700;color:#11D7E6;letter-spacing:2px;text-transform:uppercase;margin-bottom:8px;">PALETTE COULEURS</div>
+      <div style="display:flex;gap:10px;margin-top:4px;">
+        <div style="display:flex;flex-direction:column;align-items:center;gap:4px;"><div style="width:36px;height:36px;background:#0B0B0B;border-radius:4px;border:1px solid #333;"></div><div style="font-size:9px;color:#666;">#0B0B0B</div></div>
+        <div style="display:flex;flex-direction:column;align-items:center;gap:4px;"><div style="width:36px;height:36px;background:#11D7E6;border-radius:4px;"></div><div style="font-size:9px;color:#666;">#11D7E6</div></div>
+        <div style="display:flex;flex-direction:column;align-items:center;gap:4px;"><div style="width:36px;height:36px;background:#FFFFFF;border-radius:4px;border:1px solid #333;"></div><div style="font-size:9px;color:#666;">#FFFFFF</div></div>
+        <div style="display:flex;flex-direction:column;align-items:center;gap:4px;"><div style="width:36px;height:36px;background:#F3F3F3;border-radius:4px;border:1px solid #333;"></div><div style="font-size:9px;color:#666;">#F3F3F3</div></div>
+      </div>
+    </div>
+    <div>
+      <div style="font-size:11px;font-weight:700;color:#11D7E6;letter-spacing:2px;text-transform:uppercase;margin-bottom:8px;">COMPATIBILITÉ</div>
+      <div style="font-size:12px;color:#888;line-height:1.8;">
+        • ✅ Export PDF via Ctrl+P (Chrome/Edge recommandé)<br>
+        • ✅ Importable dans Figma via plugin HTML<br>
+        • ✅ Structure compatible Canva Frame-by-frame<br>
+        • ✅ Adobe Illustrator : ouvrir HTML via Open...<br>
+        • ✅ Format A4 Portrait (794×1123px par page)
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
